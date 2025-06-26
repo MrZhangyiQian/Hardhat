@@ -18,15 +18,17 @@ module.exports = {
     hardhat :{
       chainId: 1337,
     },
-    speolia: {
+    sepolia: {
       url: process.env.SPEOLIA_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
     localhost: {
       url: "http://127.0.0.1:8545",
     },
-    etherscan: {
-      apiKey: process.env.ETHERSCAN_API_KEY,
-    },
-  }
+  },
+  
+  etherscan: {
+    url: "https://eth-sepolia.g.alchemy.com/v2/xxx", // 可选，仅用于消除报错
+    apiKey: process.env.ETHERSCAN_API_KEY,
+  },
 };
